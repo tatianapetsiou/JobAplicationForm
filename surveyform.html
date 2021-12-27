@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="surveyform.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>survey-form</title>
+</head>
+<body>
+    <div id="total"> 
+    <h1>Application for job Interview </h1>
+    <p><strong>Note:</strong> Form is to be completed at least 21 days prior to date</p>
+    <div class="personal borders">
+    <h3>Personal Details</h3>
+    <form>
+        <label for="Name">Name:<input placeholder="Enter name here" type="text"></label> <br><br>
+        <label for="Address">Address:<input placeholder="Enter address here" type="text"></label> <br><br>
+        <label for="Email">Email:<input placeholder="Enter email here" type="text"></label><br><br>
+        <label for="Phone Number">Phone Number:<input placeholder="Enter 10 digit number" type="number" value="0" min="1"></label> <br><br>
+        <label for="IQ">IQ:<input placeholder="Enter IQ here" type="number" value="0" pattern="([0-9]|&#8734;)+"></label> <br><br>
+        <label for="Gender">Gender</label><br><br>
+        <p>
+        <input value="Male" type="radio"> Male<br>
+        <input value="Female" type="radio"> Female<br>
+        <input value="Other" type="radio"> Other<br><br>
+        </p>
+        <label for="Date of Propoed Outing">Date of Proposed Outing: <input  type="date" ></label> <br>
+    </div>
+       <div class="check borders">
+            <br>
+        <label for="Check All That Aplly">Check All That Apply</label>
+        <br>
+        <br>
+        <p>
+            <input  type="checkbox">I have tattoos and/or piercings <br>
+            <input type="checkbox"> I have more than 2 years experience <br>
+            <input type="checkbox"> I own a car or a bike<br>
+            <input class="boxes" type="checkbox" checked> I work full-time <br>
+            <input type="checkbox" checked> Iam in job seeking <br>
+            <input type="checkbox" checked> Passion about the area that i work <br>
+
+
+        </p>
+    </div>
+         <br>
+
+       <div class="political borders">
+            <label for="Political Persuasion">Political Persuasion:</label> <br>
+        <select name="Political Persuasion" id="Political_Persuasion">
+            <option value="Left WING">Left Wing</option>
+            <option value="right wing">Right Wing</option>
+            <option value="conservative">Conservative</option>
+            <option value="Nazi">Nazi</option> 
+          </select> <br>
+          <label for="Education Level Completed">Education Level Completed:</label> <br>
+          <select name="Education Level Completed" id="Education_Level_Completed">
+            <option value="University">University</option>
+            <option value="College">College</option>
+            <option value="High School ">High School</option>
+            <option value="None">None</option> 
+          </select> <br>
+        </div>
+
+          <div class="section borders">
+              <h3>Essay Section</h3> <br> <br>
+              <label for="50 words">In 50 words or more explain why you want to take this position <br>
+                <textarea placeholder="Enter Text Here" rows="4" cols="50"></textarea></label>  <br> 
+                
+            <label for="2 references"> Please upload contact details for 2 references <br>
+                <textarea placeholder="Enter Text Here"  cols="50" rows="4"></textarea></label><br> <br> <br>
+                <label for="file">Upload Police Clearance Certificate, Bank Statement here: <input  type="file"></label"> <br><br> <br>
+                    <input id="btn" type="submit" value="Send Your Application">
+          </div>
+        
+
+
+    </form>
+</div>
+
+</body>
+</html>
+
